@@ -1,0 +1,54 @@
+doctype html
+html(lang="en")
+    head
+        include components/head.pug
+    body 
+        div(
+            class="w-100 min-vh-100"
+            style="background-color: #dafad6;"
+        )   
+            div(
+                class="w-50 mx-auto p-5"
+            )
+                img(
+                    src="https://i.ibb.co/bgMGCV2/logo.png"
+                    class="w-100"
+                )
+            
+            div(
+                class="w-100 p-5"
+            )
+                h1(
+                    class="fw-bolder"
+                    style="color: #392F65; width: 75%; font-size: 50px !important;"
+                ) Hola, Bienvenido a MediciApp
+
+                span(
+                    class="fs-1"
+                    style="color: #392F65; font-weight: 500;"
+                ) Querido Usuario,
+                p(
+                    class="fs-6"
+                    style="color: #392F65; font-weight: 400; width: 75%; line-height: 24px; text-align: left;"
+                ) Usted ha sido registrado en nuestra plataforma, para empezar a usar y conocer nuestros beneficios lo invitamos a iniciar sesión con las siguientes credenciales
+
+                span(
+                    class="fs-5"
+                    style="color: #392F65; font-weight: 400; width: 75%; line-height: 24px; text-align: left;"
+                ) Correo: #{correo}
+                br
+                span(
+                    class="fs-5"
+                    style="color: #392F65; font-weight: 400; width: 75%; line-height: 24px; text-align: left;"
+                ) Contraseña: #{password}
+
+        script(
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js",
+            integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp",
+            crossorigin="anonymous"
+        ) 
+        script(
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"
+            integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/",
+            crossorigin="anonymous"
+        ) 
